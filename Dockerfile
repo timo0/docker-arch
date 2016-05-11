@@ -2,7 +2,7 @@ FROM devlodge/arch-minimal
 
 RUN pacman --noconfirm -Syy && \
     pacman --noconfirm -Syu && \
-    pacman --noconfirm -S texlive-most emacs-nox && \
+    pacman --noconfirm -S texlive-most emacs-nox gnuplot && \
     pacman --noconfirm -Sc
 
 # Install Metropolis theme
